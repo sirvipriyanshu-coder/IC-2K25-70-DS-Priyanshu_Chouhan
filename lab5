@@ -1,0 +1,35 @@
+// Topic: 1D Array Right Rotation
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a[100], n, k, temp;
+
+    cout << "Enter size: ";
+    cin >> n;
+
+    cout << "Enter elements: ";
+    for (int i = 0; i < n; i++)
+        cin >> a[i];
+
+    cout << "Enter rotation count: ";
+    cin >> k;
+
+    k = k % n;
+
+    for (int j = 0; j < k; j++) {
+        temp = a[n - 1];
+
+        for (int i = n - 1; i > 0; i--)
+            a[i] = a[i - 1];
+
+        a[0] = temp;
+    }
+
+    cout << "Rotated array: ";
+    for (int i = 0; i < n; i++)
+        cout << a[i] << " ";
+
+    return 0;
+}
