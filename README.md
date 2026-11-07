@@ -1,6 +1,5 @@
 # IC-2K25-70-DS-Priyanshu_Chouhan
 Array Operations and Sparse Matrix in C++ About 
-
 This repository contains C++ programs based on array operations and sparse matrix concepts. These programs are created for practice and understanding of basic Data Structures.
 
 Topics Covered
